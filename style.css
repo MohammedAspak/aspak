@@ -4,10 +4,6 @@
             text-transform: initial;
             text-decoration: underline;
 }  
-p:hover{
-    color:aliceblue;
-    background-color:darkseagreen;
-}
 .border{
     border: 2px solid brown;
     border-style: dashed;
@@ -40,4 +36,48 @@ p:hover{
     position: sticky;
     top: 10px;
     left: 120px;
+}
+.display{
+    display: block;
+}
+.inline{
+    inline: block;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    /*background-color: beige;
+    border: 2px solid black;*/
+    padding: 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
+.flex-container div{
+    /*background-color: darkseagreen;
+    border: 2px solid black;*/
+    height: 100px;
+    width: 100px;
+}
+.two{
+    /*flex-grow: 2; */
+    flex-shrink: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template: 50px 50px 50px/ 50px 50px;
+    /*grid-template-rows: 50px 50px;*/
+    /*grid-template-columns: 50px 50px 50px;*/
+    row-gap: 50px;
+    column-gap: 50px;
+}
+.grid-container div{
+    border: 2px solid darkseagreen;
+    color: darkred;
+}
+.three{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
